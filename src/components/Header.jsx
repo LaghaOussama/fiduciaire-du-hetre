@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import TreeOfLifeClipart from "../assets/TreeOfLifeClipart.svg";
 function Header() {
   return (
     <>
@@ -12,7 +11,7 @@ function Header() {
                   <img
                     type="image/svg+xml"
                     className="fiduclose-logo-icon"
-                    src={TreeOfLifeClipart}
+                    src="src/assets/TreeOfLifeClipart.svg"
                     alt="Logo"
                   ></img>
                   <div className="fiduclose-logo-divider">
