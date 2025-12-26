@@ -11,7 +11,7 @@ function Header() {
                   <img
                     type="image/svg+xml"
                     className="fiduclose-logo-icon"
-                    src="src/assets/TreeOfLifeClipart.svg"
+                    src="/assets/TreeOfLifeClipart.svg"
                     alt="Logo"
                   ></img>
                   <div className="fiduclose-logo-divider">
