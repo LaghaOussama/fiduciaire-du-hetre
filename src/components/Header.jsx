@@ -9,6 +9,7 @@ function Header() {
               <Link className="fiduclose-nav-link" to="/">
                 <div className="fiduclose-logo">
                   <img
+                    type="image/svg+xml"
                     className="fiduclose-logo-icon"
                     src="../src/assets/TreeOfLifeClipart.svg"
                     alt="Logo"
