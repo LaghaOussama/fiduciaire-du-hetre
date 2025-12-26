@@ -10,7 +10,7 @@ function Header() {
                 <div className="fiduclose-logo">
                   <img
                     className="fiduclose-logo-icon"
-                    src="src/assets/TreeOfLifeClipart.svg"
+                    src="../src/assets/TreeOfLifeClipart.svg"
                     alt="Logo"
                   ></img>
                   <div className="fiduclose-logo-divider">
