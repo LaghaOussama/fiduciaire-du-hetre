@@ -2,9 +2,6 @@
   "buildCommand": "npm run build:frontend",
   "outputDirectory": "frontend/dist",
   "framework": "vite",
-  "env": {
-    "VITE_APP_TITLE": "@fiduciaire-du-hetre"
-  },
   "rewrites": [
     {
       "source": "/(.*)",
