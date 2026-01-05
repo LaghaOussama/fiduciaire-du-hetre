@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
 import React from "react";
 
 function Home() {
@@ -24,7 +25,10 @@ function Home() {
               className=" fiduclose-btn fiduclose-btn-primary fiduclose-btn-lg "
               to="/contact"
             >
-              Prenez un rendez-vous
+              Prenez un rendez-vous{" "}
+              <span>
+                <ArrowRight className="fiduclose-icon-arrow-right" />
+              </span>
             </Link>
 
             <Link
@@ -96,6 +100,9 @@ function Home() {
             to="/service"
           >
             Découvrir nos services
+            <span>
+              <ArrowRight className="fiduclose-icon-arrow-right" />
+            </span>
           </Link>
         </div>
       </section>
