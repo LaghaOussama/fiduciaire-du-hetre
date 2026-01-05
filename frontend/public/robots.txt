@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json$
+
+# Slow down aggressive crawlers
+User-agent: MJ12bot
+Crawl-delay: 10
+
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+# Sitemap
+Sitemap: https://fiduciaireduhetre.ch/sitemap.xml

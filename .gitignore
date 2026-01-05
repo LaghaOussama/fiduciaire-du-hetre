@@ -1,4 +1,18 @@
-# Logs
+# ===== DEPENDENCIES =====
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+npm-shrinkwrap.json
+
+# ===== BUILD OUTPUT =====
+dist/
+dist-ssr/
+build/
+.next/
+out/
+
+# ===== LOGS =====
 logs
 *.log
 npm-debug.log*
@@ -6,19 +20,78 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
+.npm
+lerna.log
+npm-err.log
 
-node_modules
-dist
-dist-ssr
-*.local
+# ===== RUNTIME DATA =====
+pids
+*.pid
+*.seed
+*.pid.lock
+.env
+.env.local
+.env.*.local
+.env.production.local
+.env.development.local
+.env.test.local
 
-# Editor directories and files
+# ===== IDEs & EDITORS =====
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
 .DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+*.swp
+*~
+.vimrc
+
+# ===== RUNTIME ARTIFACTS =====
+*.local
+.cache/
+.parcel-cache
+.next
+out
+.nuxt
+dist
+.cache-loader
+.firebase/
+.contentlayer/
+
+# ===== TESTING =====
+coverage/
+.nyc_output/
+.mocha-report
+
+# ===== MISCELLANEOUS =====
+.DS_Store
+.AppleDouble
+.LSOverride
+.lh/
+*.lh
+.cache
+.vite/
+.turbo/
+turbo.json
+.eslintcache
+
+# ===== BACKEND (not yet ready) =====
+backend/
+backend/node_modules/
+
+# ===== TEMPORARY FILES =====
+*.tmp
+*.temp
+*.bak
+.tmp/
+temp/
