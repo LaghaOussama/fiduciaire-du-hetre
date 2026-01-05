@@ -11,7 +11,8 @@ function Home() {
           <div className="fidu-hetre-hero-text">
             <h1 className="fidu-hetre-hero-title">
               Votre partenaire fiduciaire de{" "}
-              <span className="fidu-hetre-text-primary">confiance</span> à Romont
+              <span className="fidu-hetre-text-primary">confiance</span> à
+              Romont
             </h1>
             <p className="fidu-hetre-hero-subtitle">
               Nous accompagnons les entreprises et particuliers avec expertise,
@@ -54,9 +55,6 @@ function Home() {
         {/* Services Grid */}
         <div className="fidu-hetre-services-grid">
           <div className="fidu-hetre-service-card">
-            <div className="fidu-hetre-service-card-icon">
-              <i className="fi fi-rr-briefcase"></i>
-            </div>
             <h3 className="fidu-hetre-service-card-title">
               Services Fiduciaires
             </h3>
@@ -66,9 +64,6 @@ function Home() {
           </div>
 
           <div className="fidu-hetre-service-card">
-            <div className="fidu-hetre-service-card-icon">
-              <i className="fi fi-rr-chart-pie"></i>
-            </div>
             <h3 className="fidu-hetre-service-card-title">
               Fiscalité & Impôts
             </h3>
@@ -78,9 +73,6 @@ function Home() {
           </div>
 
           <div className="fidu-hetre-service-card">
-            <div className="fidu-hetre-service-card-icon">
-              <i className="fi fi-rr-handshake"></i>
-            </div>
             <h3 className="fidu-hetre-service-card-title">
               Conseil Entreprise
             </h3>
@@ -90,12 +82,7 @@ function Home() {
           </div>
 
           <div className="fidu-hetre-service-card">
-            <div className="fidu-hetre-service-card-icon">
-              <i className="fi fi-rr-document"></i>
-            </div>
-            <h3 className="fidu-hetre-service-card-title">
-              Audit & Révision
-            </h3>
+            <h3 className="fidu-hetre-service-card-title">Audit & Révision</h3>
             <p className="fidu-hetre-service-card-description">
               Vérification et garantie de conformité
             </p>
