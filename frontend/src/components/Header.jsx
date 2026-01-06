@@ -88,7 +88,7 @@ function Header() {
                 Accueil
               </Link>
             </li>
-            <li>
+            {/*<li>
               <Link
                 className="fidu-hetre-mobile-nav-link"
                 to="/service"
@@ -105,7 +105,7 @@ function Header() {
               >
                 À propos
               </Link>
-            </li>
+            </li>*/}
             <li>
               <Link
                 className="fidu-hetre-mobile-nav-link"
