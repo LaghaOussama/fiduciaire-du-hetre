@@ -17,11 +17,7 @@ function Header() {
     <header className="fidu-hetre-header">
       <div className="fidu-hetre-header-content">
         {/* Logo */}
-        <Link
-          className="logo-link"
-          to="/"
-          onClick={closeMenu}
-        >
+        <Link className="logo-link" to="/" onClick={closeMenu}>
           <div className="fidu-hetre-logo">
             <img
               className="fidu-hetre-logo-icon"
@@ -29,9 +25,7 @@ function Header() {
               alt="Logo Fiduciaire du Hêtre"
             />
             <div className="fidu-hetre-logo-divider">
-              <span className="fidu-hetre-logo-text">
-                Fiduciaire du Hêtre
-              </span>
+              <span className="fidu-hetre-logo-text">Fiduciaire du Hêtre</span>
               <span className="fidu-hetre-logo-subtitle">
                 Fiduciaire suisse
               </span>
@@ -47,7 +41,7 @@ function Header() {
                 Accueil
               </Link>
             </li>
-            <li>
+            {/*  <li>
               <Link className="fidu-hetre-nav-link" to="/service">
                 Services
               </Link>
@@ -56,7 +50,7 @@ function Header() {
               <Link className="fidu-hetre-nav-link" to="/about">
                 À propos
               </Link>
-            </li>
+            </li>*/}
             <li>
               <Link className="fidu-hetre-nav-link" to="/contact">
                 Contact

@@ -31,12 +31,12 @@ function Home() {
               <ArrowRight size={20} className="fidu-hetre-icon-arrow-right" />
             </Link>
 
-            <Link
+            {/* <Link
               className="fidu-hetre-btn fidu-hetre-btn-secondary fidu-hetre-btn-lg"
               to="/service"
             >
               Découvrir nos services
-            </Link>
+            </Link>*/}
           </div>
         </div>
       </section>
@@ -90,7 +90,7 @@ function Home() {
         </div>
 
         {/* CTA Button */}
-        <div className="fidu-hetre-services-cta">
+        {/*  <div className="fidu-hetre-services-cta">
           <Link
             className="fidu-hetre-btn fidu-hetre-btn-secondary fidu-hetre-btn-lg"
             to="/service"
@@ -98,7 +98,7 @@ function Home() {
             Découvrir tous nos services
             <ArrowRight size={20} className="fidu-hetre-icon-arrow-right" />
           </Link>
-        </div>
+        </div>*/}
       </section>
 
       {/* Contact & Map Section */}
@@ -110,15 +110,19 @@ function Home() {
             <div className="fidu-hetre-hours-list">
               <div className="fidu-hetre-hours-item">
                 <span className="fidu-hetre-hours-day">Lundi - Mardi</span>
-                <span className="fidu-hetre-hours-time">08:00 - 17:00</span>
+                <span className="fidu-hetre-hours-time">
+                  08:30-11:30 / 13:00-16:00
+                </span>
               </div>
               <div className="fidu-hetre-hours-item">
                 <span className="fidu-hetre-hours-day">Mercredi</span>
-                <span className="fidu-hetre-hours-time">Fermé</span>
+                <span className="fidu-hetre-hours-time">Sur rendez-vous</span>
               </div>
               <div className="fidu-hetre-hours-item">
                 <span className="fidu-hetre-hours-day">Jeudi</span>
-                <span className="fidu-hetre-hours-time">08:00 - 17:00</span>
+                <span className="fidu-hetre-hours-time">
+                  08:30-11:30 / 13:00-16:00
+                </span>
               </div>
               <div className="fidu-hetre-hours-item">
                 <span className="fidu-hetre-hours-day">Vendredi</span>

@@ -20,7 +20,6 @@ function Footer() {
   return (
     <footer className="fidu-hetre-footer">
       <div className="fidu-hetre-footer-content">
-        
         {/* Logo Section */}
         <div className="fidu-hetre-footer-utiles">
           <div className="fidu-hetre-logo">
@@ -44,12 +43,12 @@ function Footer() {
         <div className="fidu-hetre-footer-utiles">
           <h3 className="fidu-hetre-footer-section">Liens utiles</h3>
           <ul className="fidu-hetre-footer-links">
-            <li>
+            {/* <li>
               <Link to="/about">À propos</Link>
             </li>
             <li>
               <Link to="/service">Nos services</Link>
-            </li>
+            </li>*/}
             <li>
               <Link to="/contact">Contactez-nous</Link>
             </li>
@@ -98,15 +97,12 @@ function Footer() {
             </li>
           </ul>
         </div>
-
       </div>
 
       {/* Footer Bottom */}
       <div className="fidu-hetre-footer-content">
         <div className="fidu-hetre-footer-bottom">
-          <p>
-            © 2026 Fiduciaire du Hêtre. Tous droits réservés.
-          </p>
+          <p>© 2026 Fiduciaire du Hêtre. Tous droits réservés.</p>
         </div>
       </div>
     </footer>
