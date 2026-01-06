@@ -30,10 +30,10 @@ function Footer() {
             />
             <div className="fidu-hetre-logo-divider">
               <h3 className="fidu-hetre-footer-logo-text">
-                Fiduciaire du Hêtre
+                Fiduciaire du Hêtre Sàrl
               </h3>
               <span className="fidu-hetre-footer-logo-subtitle">
-                Fiduciaire suisse
+                Membre de la chambre fiduciaire suisse
               </span>
             </div>
           </div>

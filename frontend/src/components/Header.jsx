@@ -25,9 +25,11 @@ function Header() {
               alt="Logo Fiduciaire du Hêtre"
             />
             <div className="fidu-hetre-logo-divider">
-              <span className="fidu-hetre-logo-text">Fiduciaire du Hêtre</span>
+              <span className="fidu-hetre-logo-text">
+                Fiduciaire du Hêtre Sàrl
+              </span>
               <span className="fidu-hetre-logo-subtitle">
-                Fiduciaire suisse
+                Membre de la chambre fiduciaire suisse
               </span>
             </div>
           </div>
