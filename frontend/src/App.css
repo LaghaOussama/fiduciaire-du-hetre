@@ -37,8 +37,8 @@
   --fidu-hetre-space-20: 5rem;
 
   /* Typography */
-  --fidu-hetre-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif;
+  --fidu-hetre-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
   --fidu-hetre-font-xs: 0.75rem;
   --fidu-hetre-font-sm: 0.875rem;
   --fidu-hetre-font-base: 1rem;
@@ -1062,5 +1062,195 @@
 
   .fidu-hetre-footer-content {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ===== CONTACT & MAP SECTION ===== */
+.fidu-hetre-contact-map-section {
+  position: relative;
+  padding: var(--fidu-hetre-space-12) var(--fidu-hetre-space-4);
+  background: linear-gradient(135deg, #eff6ff 0%, white 100%);
+  border-top: 1px solid var(--fidu-hetre-gray-200);
+  width: 100%;
+}
+
+.fidu-hetre-contact-map-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--fidu-hetre-space-8);
+  align-items: stretch;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* Opening Hours Card */
+.fidu-hetre-opening-hours {
+  padding: var(--fidu-hetre-space-8);
+  background: white;
+  border-radius: var(--fidu-hetre-radius-xl);
+  box-shadow: var(--fidu-hetre-shadow-lg);
+  transition: all var(--fidu-hetre-transition-normal);
+  border: 1px solid var(--fidu-hetre-gray-100);
+  position: relative;
+  overflow: hidden;
+}
+
+.fidu-hetre-opening-hours::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+}
+
+.fidu-hetre-opening-hours:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--fidu-hetre-shadow-xl);
+  border-color: var(--fidu-hetre-primary-light);
+}
+
+.fidu-hetre-opening-hours h2 {
+  margin: 0 0 var(--fidu-hetre-space-6) 0;
+  color: var(--fidu-hetre-gray-900);
+  font-size: var(--fidu-hetre-font-2xl);
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+/* Hours List Styling */
+.fidu-hetre-hours-list {
+  margin: var(--fidu-hetre-space-6) 0;
+  background: var(--fidu-hetre-gray-50);
+  border-radius: var(--fidu-hetre-radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--fidu-hetre-gray-200);
+}
+
+.fidu-hetre-hours-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--fidu-hetre-space-4) var(--fidu-hetre-space-5);
+  border-bottom: 1px solid var(--fidu-hetre-gray-200);
+  transition: all var(--fidu-hetre-transition-fast);
+}
+
+.fidu-hetre-hours-item:last-child {
+  border-bottom: none;
+}
+
+.fidu-hetre-hours-item:hover {
+  background-color: white;
+}
+
+.fidu-hetre-hours-day {
+  font-weight: 600;
+  color: var(--fidu-hetre-gray-800);
+  font-size: var(--fidu-hetre-font-base);
+}
+
+.fidu-hetre-hours-time {
+  color: var(--fidu-hetre-primary);
+  font-weight: 700;
+  font-size: var(--fidu-hetre-font-sm);
+  background: transparent;
+  padding: var(--fidu-hetre-space-2) var(--fidu-hetre-space-4);
+  border-radius: var(--fidu-hetre-radius-md);
+  box-shadow: var(--fidu-hetre-shadow-md);
+  transition: all var(--fidu-hetre-transition-fast);
+}
+
+.fidu-hetre-hours-item:hover .fidu-hetre-hours-time {
+  transform: translateY(-2px);
+  box-shadow: var(--fidu-hetre-shadow-lg);
+}
+
+/* Contact Info */
+.fidu-hetre-contact-info {
+  margin-top: var(--fidu-hetre-space-8);
+  padding-top: var(--fidu-hetre-space-6);
+  border-top: 2px solid var(--fidu-hetre-primary);
+}
+
+.fidu-hetre-contact-info p {
+  margin: var(--fidu-hetre-space-3) 0;
+  color: var(--fidu-hetre-gray-700);
+  font-size: var(--fidu-hetre-font-base);
+  line-height: 1.6;
+}
+
+.fidu-hetre-contact-info strong {
+  color: var(--fidu-hetre-gray-900);
+  font-weight: 600;
+}
+
+.fidu-hetre-contact-info a {
+  color: var(--fidu-hetre-primary);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all var(--fidu-hetre-transition-fast);
+}
+
+.fidu-hetre-contact-info a:hover {
+  color: var(--fidu-hetre-primary-dark);
+  text-decoration: underline;
+}
+
+/* Map Container */
+.fidu-hetre-map-container {
+  border-radius: var(--fidu-hetre-radius-xl);
+  overflow: hidden;
+  box-shadow: var(--fidu-hetre-shadow-lg);
+  height: 100%;
+  min-height: 400px;
+  background: white;
+  transition: all var(--fidu-hetre-transition-normal);
+  border: 1px solid var(--fidu-hetre-gray-100);
+}
+
+.fidu-hetre-map-container:hover {
+  box-shadow: var(--fidu-hetre-shadow-xl);
+  transform: translateY(-4px);
+}
+
+.fidu-hetre-map-container iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Responsive Design */
+@media (max-width: 1023px) {
+  .fidu-hetre-contact-map-section {
+    padding: var(--fidu-hetre-space-8) var(--fidu-hetre-space-4);
+  }
+
+  .fidu-hetre-contact-map-container {
+    grid-template-columns: 1fr;
+    gap: var(--fidu-hetre-space-6);
+  }
+
+  .fidu-hetre-map-container {
+    min-height: 350px;
+  }
+}
+
+@media (max-width: 639px) {
+  .fidu-hetre-contact-map-section {
+    padding: var(--fidu-hetre-space-6) var(--fidu-hetre-space-4);
+  }
+
+  .fidu-hetre-opening-hours h2 {
+    font-size: var(--fidu-hetre-font-xl);
+  }
+
+  .fidu-hetre-hours-item {
+    padding: var(--fidu-hetre-space-3) var(--fidu-hetre-space-4);
+  }
+
+  .fidu-hetre-map-container {
+    min-height: 300px;
   }
 }
