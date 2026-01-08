@@ -82,9 +82,9 @@ function Home() {
           </div>
 
           <div className="fidu-hetre-service-card">
-            <h3 className="fidu-hetre-service-card-title">Audit & Révision</h3>
+            <h3 className="fidu-hetre-service-card-title">Outsourcing</h3>
             <p className="fidu-hetre-service-card-description">
-              Vérification et garantie de conformité
+              Acompagnement de votre administration ou remplacement temporaire
             </p>
           </div>
         </div>
@@ -111,7 +111,7 @@ function Home() {
               <div className="fidu-hetre-hours-item">
                 <span className="fidu-hetre-hours-day">Lundi - Mardi</span>
                 <span className="fidu-hetre-hours-time">
-                  08:30-11:30 / 13:00-16:00
+                  09:00-11:30 / 13:00-16:00
                 </span>
               </div>
               <div className="fidu-hetre-hours-item">
@@ -121,7 +121,7 @@ function Home() {
               <div className="fidu-hetre-hours-item">
                 <span className="fidu-hetre-hours-day">Jeudi</span>
                 <span className="fidu-hetre-hours-time">
-                  08:30-11:30 / 13:00-16:00
+                  09:00-11:30 / 13:00-16:00
                 </span>
               </div>
               <div className="fidu-hetre-hours-item">
@@ -130,7 +130,7 @@ function Home() {
               </div>
               <div className="fidu-hetre-hours-item">
                 <span className="fidu-hetre-hours-day">Samedi</span>
-                <span className="fidu-hetre-hours-time">09:00 - 13:00</span>
+                <span className="fidu-hetre-hours-time">09:00 - 11:30</span>
               </div>
               <div className="fidu-hetre-hours-item">
                 <span className="fidu-hetre-hours-day">Dimanche</span>
