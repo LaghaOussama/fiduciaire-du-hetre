@@ -1053,8 +1053,7 @@
   }
 
   .fidu-hetre-services-grid {
-    grid-template-columns: repeat(5, 1fr);
-    gap: var(--fidu-hetre-space-4);
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .fidu-hetre-contact-cards-grid {
