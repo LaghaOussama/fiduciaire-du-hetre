@@ -67,7 +67,11 @@ function Footer() {
                 tabIndex={0}
                 onKeyDown={(e) => e.key === "Enter" && handlePhoneClick()}
               >
-                <Phone className="fidu-hetre-footer-top-icon" size={16} />
+                <Phone
+                  alt="Numéro de téléphone"
+                  className="fidu-hetre-footer-top-icon"
+                  size={16}
+                />
                 <span>+41 26 652 15 15</span>
               </div>
             </li>
@@ -79,7 +83,11 @@ function Footer() {
                 tabIndex={0}
                 onKeyDown={(e) => e.key === "Enter" && handleAddressClick()}
               >
-                <MapPin className="fidu-hetre-footer-top-icon" size={16} />
+                <MapPin
+                  alt="Localisation Romont"
+                  className="fidu-hetre-footer-top-icon"
+                  size={16}
+                />
                 <span>Rue de l'Eglise 75, 1680 Romont</span>
               </div>
             </li>
@@ -91,7 +99,11 @@ function Footer() {
                 tabIndex={0}
                 onKeyDown={(e) => e.key === "Enter" && handleEmailClick()}
               >
-                <Mail className="fidu-hetre-footer-top-icon" size={16} />
+                <Mail
+                  alt="Adresse email"
+                  className="fidu-hetre-footer-top-icon"
+                  size={16}
+                />
                 <span>info@fiduciaireduhetre.ch</span>
               </div>
             </li>

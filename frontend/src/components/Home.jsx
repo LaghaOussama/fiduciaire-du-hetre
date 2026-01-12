@@ -4,6 +4,11 @@ import { ArrowRight } from "lucide-react";
 function Home() {
   return (
     <>
+      <SEO
+        title="Fiduciaire du Hêtre - Accueil"
+        description="Découvrez nos services fiduciaires professionnels à Romont"
+        canonical="https://fiduciaireduhetre.ch"
+      />
       {/* Hero Section */}
       <section className="fidu-hetre-hero">
         <div className="fidu-hetre-hero-content">
@@ -83,6 +88,12 @@ function Home() {
 
           <div className="fidu-hetre-service-card">
             <h3 className="fidu-hetre-service-card-title">Outsourcing</h3>
+            <p className="fidu-hetre-service-card-description">
+              Acompagnement de votre administration ou remplacement temporaire
+            </p>
+          </div>
+          <div className="fidu-hetre-service-card">
+            <h3 className="fidu-hetre-service-card-title">Services RH</h3>
             <p className="fidu-hetre-service-card-description">
               Acompagnement de votre administration ou remplacement temporaire
             </p>

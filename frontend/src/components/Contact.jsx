@@ -2,6 +2,11 @@ import { MapPin, Mail, Phone, Send } from "lucide-react";
 import { useState } from "react";
 
 export default function Contact() {
+  <SEO
+    title="Contact - Fiduciaire du Hêtre | Premiers Entretien Gratuit"
+    description="Contactez-nous pour une consultation gratuite. Tél: +41 26 652 15 15"
+    canonical="https://fiduciaireduhetre.ch/contact"
+  />;
   const [formData, setFormData] = useState({
     fname: "",
     lname: "",
@@ -103,9 +108,7 @@ export default function Contact() {
         <div className="fidu-hetre-contact-hero-content">
           <h1 className="fidu-hetre-hero-title">
             Contactez&nbsp;
-            <span className="fidu-hetre-text-primary">
-              Fiduciaire du Hêtre
-            </span>
+            <span className="fidu-hetre-text-primary">Fiduciaire du Hêtre</span>
           </h1>
           <p className="fidu-hetre-hero-subtitle">
             Nous serons ravis de vous aider et de répondre à toutes vos
@@ -125,12 +128,17 @@ export default function Contact() {
             className="fidu-hetre-contact-card fidu-hetre-contact-card-link"
           >
             <div className="fidu-hetre-contact-card-icon">
-              <MapPin className="fidu-hetre-contact-icon" size={32} />
+              <MapPin
+                alt="Localisation Romont"
+                className="fidu-hetre-contact-icon"
+                size={32}
+              />
             </div>
             <div className="fidu-hetre-contact-card-content">
               <h3 className="fidu-hetre-contact-card-title">Adresse</h3>
               <p className="fidu-hetre-contact-card-text">
-                Rue de l'Eglise 75<br />
+                Rue de l'Eglise 75
+                <br />
                 1680 Romont, Suisse
               </p>
             </div>
@@ -142,13 +150,15 @@ export default function Contact() {
             className="fidu-hetre-contact-card fidu-hetre-contact-card-link"
           >
             <div className="fidu-hetre-contact-card-icon">
-              <Phone className="fidu-hetre-contact-icon" size={32} />
+              <Phone
+                alt="Numéro de téléphone"
+                className="fidu-hetre-contact-icon"
+                size={32}
+              />
             </div>
             <div className="fidu-hetre-contact-card-content">
               <h3 className="fidu-hetre-contact-card-title">Téléphone</h3>
-              <p className="fidu-hetre-contact-card-text">
-                +41 26 652 15 15
-              </p>
+              <p className="fidu-hetre-contact-card-text">+41 26 652 15 15</p>
             </div>
           </a>
 
@@ -158,7 +168,11 @@ export default function Contact() {
             className="fidu-hetre-contact-card fidu-hetre-contact-card-link"
           >
             <div className="fidu-hetre-contact-card-icon">
-              <Mail className="fidu-hetre-contact-icon" size={32} />
+              <Mail
+                alt="Adresse email"
+                className="fidu-hetre-contact-icon"
+                size={32}
+              />
             </div>
             <div className="fidu-hetre-contact-card-content">
               <h3 className="fidu-hetre-contact-card-title">Email</h3>
