@@ -1,5 +1,6 @@
 import { MapPin, Mail, Phone, Send } from "lucide-react";
 import { useState } from "react";
+import SEO from "./SEO";
 
 export default function Contact() {
   <SEO
@@ -22,7 +23,7 @@ export default function Contact() {
   });
 
   const API_URL = import.meta.env.PROD
-    ? "https://votre-domaine.com/api"
+    ? "https://fiduciaireduhetre.ch/api"
     : "http://localhost:3001/api";
 
   const handleChange = (e) => {
@@ -268,7 +269,11 @@ export default function Contact() {
                 onChange={handleChange}
                 required
               />
-              <label className="fidu-hetre-form-label" htmlFor="email">
+              <label
+                className="fidu-hetre-form-label"
+                htmlFor="email"
+                autoComplete
+              >
                 Email
               </label>
             </div>

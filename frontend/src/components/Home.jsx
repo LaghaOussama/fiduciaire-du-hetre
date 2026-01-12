@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
+import SEO from "./SEO";
 
 function Home() {
   return (
@@ -92,12 +93,13 @@ function Home() {
               Acompagnement de votre administration ou remplacement temporaire
             </p>
           </div>
+          {/*
           <div className="fidu-hetre-service-card">
             <h3 className="fidu-hetre-service-card-title">Services RH</h3>
             <p className="fidu-hetre-service-card-description">
               Acompagnement de votre administration ou remplacement temporaire
             </p>
-          </div>
+          </div>*/}
         </div>
 
         {/* CTA Button */}

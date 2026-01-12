@@ -1,3 +1,4 @@
+import SEO from "./SEO";
 export default function About() {
   return (
     <>
