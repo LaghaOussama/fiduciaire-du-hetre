@@ -3,11 +3,6 @@ import { useState } from "react";
 import SEO from "./SEO";
 
 export default function Contact() {
-  <SEO
-    title="Contact - Fiduciaire du Hêtre | Premiers Entretien Gratuit"
-    description="Contactez-nous pour une consultation gratuite. Tél: +41 26 652 15 15"
-    canonical="https://fiduciaireduhetre.ch/contact"
-  />;
   const [formData, setFormData] = useState({
     fname: "",
     lname: "",
@@ -23,8 +18,8 @@ export default function Contact() {
   });
 
   const API_URL = import.meta.env.PROD
-    ? "https://fiduciaireduhetre.ch/api"
-    : "http://localhost:3001/api";
+    ? "https://api.fiduciaireduhetre.ch"
+    : "http://localhost:3001";
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -40,10 +35,10 @@ export default function Contact() {
     setSendStatus({ success: false, error: false, message: "" });
 
     try {
-      console.log("📤 Envoi vers:", `${API_URL}/contact/send`);
+      console.log("📤 Envoi vers:", `${API_URL}/api/contact/send`);
       console.log("📝 Données:", formData);
 
-      const response = await fetch(`${API_URL}/contact/send`, {
+      const response = await fetch(`${API_URL}/api/contact/send`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -104,6 +99,11 @@ export default function Contact() {
 
   return (
     <>
+      <SEO
+        title="Contact - Fiduciaire du Hêtre | Premiers Entretien Gratuit"
+        description="Contactez-nous pour une consultation gratuite. Tél: +41 26 652 15 15"
+        canonical="https://fiduciaireduhetre.ch/contact"
+      />
       {/* Hero Section */}
       <section className="fidu-hetre-contact-hero">
         <div className="fidu-hetre-contact-hero-content">
@@ -117,7 +117,6 @@ export default function Contact() {
           </p>
         </div>
       </section>
-
       {/* Contact Cards Section */}
       <section className="fidu-hetre-contact-cards-section">
         <div className="fidu-hetre-contact-cards-grid">
@@ -184,7 +183,6 @@ export default function Contact() {
           </a>
         </div>
       </section>
-
       {/* Form Section */}
       <section className="fidu-hetre-contact-form-section">
         <div className="fidu-hetre-contact-form-wrapper">

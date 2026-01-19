@@ -61,9 +61,9 @@ function Home() {
         {/* Services Grid */}
         <div className="fidu-hetre-services-grid">
           <div className="fidu-hetre-service-card">
-            <h3 className="fidu-hetre-service-card-title">
+            <h2 className="fidu-hetre-service-card-title">
               Services Fiduciaires
-            </h3>
+            </h2>
             <p className="fidu-hetre-service-card-description">
               Gestion complète de votre comptabilité et administration
             </p>
